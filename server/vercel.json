@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "server/index.js": {
-      "runtime": "nodejs18.x"  // Updated to a more current version
+      "runtime": "nodejs20.x"  // Updated to a more current version
     }
   },
   "routes": [
