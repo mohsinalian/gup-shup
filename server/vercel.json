@@ -1,11 +1,3 @@
 {
-  "version": 2,
-  "functions": {
-    "server/index.js": {
-      "runtime": "nodejs20.x"  // Updated to a more current version
-    }
-  },
-  "routes": [
-    { "src": "/(.*)", "dest": "/server/index.js" }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
 }
