@@ -1,4 +1,4 @@
-const socket = io("http://localhost:8000");
+const socket = io("https://gup-shup-tan.vercel.app/");
 
 const form = document.querySelector("#send-container");
 const messageInput = document.querySelector("#messageInp");
