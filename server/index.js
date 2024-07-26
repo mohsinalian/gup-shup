@@ -40,3 +40,7 @@ console.log("Server setup completed, ready to handle requests.");
 module.exports = (req, res) => {
   httpServer.emit("request", req, res);
 };
+module.exports = (req, res) => {
+  res.status(200).send('Hello, world!');
+};
+
