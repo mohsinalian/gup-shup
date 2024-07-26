@@ -2,11 +2,11 @@
 {
   "version": 2,
   "functions": {
-    "api/index.js": {
+    "server/index.js": {
       "runtime": "nodejs14.x"
     }
   },
   "routes": [
-    { "src": "/(.*)", "dest": "/api/index.js" }
+    { "src": "/(.*)", "dest": "/server/index.js" }
   ]
 }
