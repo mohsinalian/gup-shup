@@ -1,22 +1,11 @@
-const express = require("express");
-const app = express();
-const path = require("path");
+const http = require("http");
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// https.get("", (req, res) => {
+//   res.send("hello");
+// });
 
-app.get("/", function (req, res) {
-  res.send("server Running");
-});
-
-
-
-
-
-
-
-
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8000 || http;
+// const port = http;
 const io = require("socket.io")(port, {
   cors: {
     origin: "*", // Allow requests from all origins
@@ -27,6 +16,7 @@ const user = {};
 
 io.on("connection", (socket) => {
   console.log("New user connected");
+
   socket.on("new-user-joined", (name) => {
     user[socket.id] = name;
     socket.broadcast.emit("user-joined", name);
