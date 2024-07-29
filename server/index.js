@@ -6,7 +6,7 @@ const httpServer = http.createServer();
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "*", // Allow requests from all origins
+    origin: "https://gup-shup-app.netlify.app/", // Allow requests from all origins
     methods: ["GET", "POST"],
     credentials: true,
   }
