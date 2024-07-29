@@ -4,7 +4,7 @@
   "description": "node server for chatting app gupshup",
   "main": "index.js",
     "engines": {
-    "node": "14.x"
+    "node": "20.x"
   },
   "dependencies": {
     "accepts": "^1.3.8",
