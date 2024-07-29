@@ -31,4 +31,4 @@ io.on("connection", (socket) => {
     delete user[socket.id];
   });
 });
-httpServer.listen(8000);
+httpServer.listen("https://gup-shup-app.vercel.app/");
