@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "node server for chatting app gupshup",
   "main": "index.js",
+    "type": "module",
     "engines": {
     "node": "20.x"
   },
