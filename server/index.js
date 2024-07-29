@@ -1,12 +1,9 @@
-const http = require("http");
 
-// https.get("", (req, res) => {
-//   res.send("hello");
-// });
+import { createServer } from "http";
+import { Server } from "socket.io";
 
-const port = process.env.PORT || 8000 || http;
-// const port = http;
-const io = require("socket.io")(port, {
+const httpServer = createServer();
+const io = new Server(httpServer, {
   cors: {
     origin: "*", // Allow requests from all origins
   },
@@ -34,3 +31,4 @@ io.on("connection", (socket) => {
     delete user[socket.id];
   });
 });
+httpServer.listen(8000);
