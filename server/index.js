@@ -8,7 +8,7 @@ const io = new Server(httpServer, {
   cors: {
     origin: "*", // Allow requests from all origins
     methods: ["GET", "POST"],
-    credentials: false,
+    credentials: true,
   }
 });
 
