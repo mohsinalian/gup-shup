@@ -1,4 +1,7 @@
-const socket = io("https://gup-shup-app.vercel.app/");
+//const socket = io("https://gup-shup-app.vercel.app/");
+const socket = io('https://gup-shup-app.vercel.app', {
+  transports: ['websocket'], // Ensure you're using WebSocket transport
+});
 
 const form = document.querySelector("#send-container");
 const messageInput = document.querySelector("#messageInp");
