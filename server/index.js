@@ -34,4 +34,4 @@ io.on("connection", (socket) => {
     delete user[socket.id];
   });
 });
-httpServer.listen(process.env.PORT || 8000);
+httpServer.listen(process.env.PORT);
