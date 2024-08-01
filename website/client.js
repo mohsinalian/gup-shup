@@ -1,6 +1,6 @@
 // const socket = io("https://gup-shup-app.vercel.app/");
 const socket = io('wss://gup-shup-app.vercel.app/socket.io/?EIO=4&transport=websocket', {
-  transports: ['websocket','polling'], // Ensure you're using WebSocket transport
+  transports: ['polling'], // Ensure you're using WebSocket transport
 });
 
 const form = document.querySelector("#send-container");
