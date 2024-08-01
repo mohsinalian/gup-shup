@@ -9,7 +9,9 @@ const io = new Server(httpServer, {
     origin: "*", // Allow requests from all origins
     methods: ["GET", "POST"],
     credentials: true,
-  }
+  }, {
+  connectionStateRecovery: {}
+}
 });
 
 const user = {};
