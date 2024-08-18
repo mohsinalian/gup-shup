@@ -1,5 +1,5 @@
 // const socket = io("https://gup-shup-app.vercel.app/");
-const socket = io('https://gup-shup-server.vercel.app/', {
+const socket = io('https://gup-shup-server-il81hlh32-mohsin-naqvis-projects.vercel.app', {
   transports: ['websocket'], // Ensure you're using WebSocket transport
 });
 
