@@ -25,7 +25,8 @@
     "socket.io-parser": "^4.2.4",
     "undici-types": "^5.26.5",
     "vary": "^1.1.2",
-    "ws": "^8.17.1"
+    "ws": "^8.17.1",
+    "pusher": "^5.2.0"
   },
   
   "scripts": {
