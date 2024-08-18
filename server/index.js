@@ -2,6 +2,24 @@
 const http = require('http');
 const { Server } = require('socket.io');
 
+
+
+const Pusher = require("pusher");
+
+const pusher = new Pusher({
+  appId: "1851257",
+  key: "c8687ec0d64086e3c67f",
+  secret: "6c6657775b6fdd3e72ce",
+  cluster: "ap2",
+  useTLS: true
+});
+
+
+
+
+
+
+
 const httpServer = http.createServer();
 
 const io = new Server(httpServer, {
