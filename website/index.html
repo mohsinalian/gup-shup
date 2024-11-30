@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gup Shup</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+
+    <script defer src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="icon" src="img/icon.png" alt="icon" />
+      <h1 class="title">Gup Shup</h1>
+    </nav>
+
+    <div class="container"></div>
+    <div class="send">
+      <form action="#" id="send-container">
+        <input type="text" name="messageInp" id="messageInp" />
+        <button class="btn" type="submit">&rarr;</button>
+      </form>
+    </div>
+  </body>
+</html>
