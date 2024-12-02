@@ -13,7 +13,7 @@
   padding: 10px;
 }
 
-.title {
+/* .title {
   position: relative;
   height: 50px;
   padding: 10px;
@@ -29,47 +29,70 @@
   transform: translate(-50%, -10%);
   top: 50%;
   left: 50%;
-}
+} */
 
 /* 
  */
 body {
-  background-image: linear-gradient(rgb(255 255 255), rgb(242, 128, 255));
+  background-image: linear-gradient(rgb(59, 59, 59), rgb(45, 42, 46));
   height: 100vh;
 }
 
 .container {
   background-image: url(img/bg.png);
   border: 1px solid gray;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   width: auto;
   max-width: 800px;
-  height: 60vh;
+  height: 75vh;
   margin: auto;
   overflow-y: auto;
   margin-bottom: 30px;
+  margin-bottom: 0;
 }
-
+.container::-webkit-scrollbar {
+  width: 0.5vw;
+}
+.container::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  border-radius: 1rem;
+}
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(68, 63, 69);
+}
+.container::-webkit-scrollbar-track {
+  background-color: rgb(193, 180, 198);
+}
+.name {
+  margin-bottom: 3px;
+  font-size: large;
+  font-weight: 800;
+}
 .message {
-  font-family: sans-serif;
-  background: rgb(197, 191, 191);
+  margin-left: 5px;
   word-wrap: break-word;
   overflow-wrap: break-word;
-
+}
+.messageBox {
+  font-family: monospace;
+  background: rgb(197, 191, 191);
   padding: 10px;
+  min-width: 80px;
   max-width: 55%;
   width: auto;
   height: auto;
   margin: 15px 5px;
-  border-radius: 10px;
 }
 
 .left {
   float: left;
   clear: both;
+
+  border-radius: 0 5px 5px 5px;
 }
 
 .right {
+  border-radius: 5px 0 5px 5px;
   float: right;
   clear: both;
 }
@@ -82,20 +105,24 @@ body {
   text-align: center;
 }
 #messageInp {
-  margin: 10px;
   padding: 5px;
   height: 36px;
   border: none;
-
-  border-radius: 5px;
+  border-radius: 0 0 0 5px;
   width: 100%;
 }
 
 .btn {
-  border-radius: 5px;
+  border-radius: 0 0 5px 0;
   border: none;
-  margin: 10px;
+
   padding: 5px;
   height: 36px;
   width: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 80vh;
+  }
 }
