@@ -27,6 +27,10 @@ const append = function (name, message, position) {
   messageElement.append(userName);
   messageElement.append(messageText);
   messageContainer.append(messageElement);
+
+  // keep in view
+  
+  messageElement.scrollIntoView({ behavior: "smooth" });
   // check
   if (position == "left") {
     audio.play();
